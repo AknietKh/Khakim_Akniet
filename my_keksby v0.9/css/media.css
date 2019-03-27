@@ -1,5 +1,26 @@
+@media (max-width: 1050px) {
+	html{
+		font-size: 8px;
+	}
+  .promo{
+  	margin-bottom: auto;
+  }
+}
+
 @media (max-width: 768px) {
 	html{
 		font-size: 8px;
 	}
+	.header-top{
+		width: 85vw;
+	}
+	.visible-condition{
+		display: none;
+	}
+	.m-menu-link{
+		display: block;
+	}
+  .promo{
+  	margin-bottom: auto;
+  }
 }
