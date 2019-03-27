@@ -5,21 +5,28 @@
   <title>The Greate Keksby</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!--<link rel="stylesheet" type="text/css" href="css/media.css">-->
+  <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
 <body class="main-content">
+  
+  <nav class="m-menu">
+  	<a class="close-m-menu">&times;</a>
+  	<a class="menu-item _link-theme" href="#">Магазин</a>
+    <a class="menu-item _link-theme" href="#">Каталог</a>
+    <a class="menu-item _link-theme" href="#">Отзывы</a>
+    <a href="#" class="batton batton_ghost _link-theme">Заказать</a>
+  </nav>
 
   <header class="page-header">
     <section class="header-top">
-      <div class="logo">
-        <img src="img/logo.png" alt="logo">
-      </div>
-      <nav class="menu">
+      <img class="logo" src="img/logo.png" alt="logo">
+      <nav class="menu visible-condition">
         <a class="menu-item _link-theme" href="#">Магазин</a>
         <a class="menu-item _link-theme" href="#">Каталог</a>
         <a class="menu-item _link-theme" href="#">Отзывы</a>
+        <a href="#" class="batton batton_ghost _link-theme">Заказать</a>
       </nav>
-      <a href="#" class="batton batton_ghost _link-theme">Заказать</a>
+      <a href="#" class="m-menu-link"><span class="menu-burger"></span></a>
     </section>
     <div class="promo">
       <a href="#" class="_link-theme">Аксессуары для котов<br>Коллекция FW15</a>
@@ -230,9 +237,7 @@
 
       <header class="footer-top">
 
-        <div class="logo">
-          <img src="img/logo.png" alt="logo">
-        </div>
+        <img class="logo" src="img/logo.png" alt="logo">
         <a href="#" class="batton batton_ghost batton_footer-theme">Заказать</a>
 
       </header>
@@ -278,6 +283,23 @@
       </footer>
     </div>
   </footer>
-
+  
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- not my script -->
+  <script> 
+  	$(function(){
+  		var link = $('.m-menu-link');
+  		var close = $('.close-m-menu');
+  		var menu = $('.m-menu');
+  		link.on('click', function(event) {
+  			event.preventDefault();
+  			menu.toggleClass('m-menu_active');
+  		});
+  		close.on('click', function(event) {
+  			event.preventDefault();
+  			menu.toggleClass('m-menu_active');
+  		});
+  	});
+  </script>
 </body>
 </html>

@@ -7,14 +7,27 @@ html{
 	background-color: #eeeeee;
 }
 .page-header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
 	background: url(../img/promo.jpg) no-repeat;
 	background-size: 100%;
 	max-width: 128rem;
-	min-height: 52.5rem;
+	min-height: 38.5vw;
 	border: 1px solid rgba(255, 255, 255, 0);
 }
 .header-top{
-	max-width: 102rem;
+	border: 1px solid red;
+	align-self: flex-start;
+	width: 75vw;
 	min-height: 6rem;
 	margin-right: auto;
 	margin-left: auto;
@@ -24,13 +37,10 @@ html{
 	align-items: center;
 }
 .logo{
-	max-width: 29.5rem;
-	max-height: 6rem;
+	max-width: 23%;	
 }
 .menu{
-	width: 35rem;
-	margin-left: 2rem;
-	margin-right: 6rem;
+	width: 50vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -69,13 +79,81 @@ html{
 	background-color: #fff;
 	color:#c5c5c5;
 }
+.m-menu{
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to top,#eeeeee, #a38b70);
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+}
+.m-menu a{
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+.m-menu_active{
+	-webkit-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	-o-transform: translateX(0%);
+	transform: translateX(0%);
+}
+.close-m-menu{
+	position: fixed;
+	top: 10%;
+	right: 10%;
+	font-weight: bold;
+	color: #fff;
+}
+.close-m-menu:hover{
+	cursor: pointer;
+}
+.m-menu-link{
+	display: none;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+.menu-burger,
+.menu-burger::before,
+.menu-burger::after{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1px;
+  margin-left: -10px;
+	width: 20px; 
+	height: 2px;
+	background-color: #fff;
+}
+.menu-burger::before{
+	content: '';
+	transform: translateY(-5px);
+}
+.menu-burger::after{
+	content: '';
+	transform: translateY(5px);
+}
 .promo{
+	align-self: center;
+	margin-bottom: 11.6vw;
+	border: 1px solid red;
 	font-family: Georgia, sans-serif;
 	font-weight: bold;
 	font-size: 4.5rem;
 	line-height: 5.5rem;
 	text-align: center;
-	margin-top: 12rem;
 }
 ._link-theme{
 	color: #fff;
