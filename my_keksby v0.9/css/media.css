@@ -7,7 +7,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
 	html{
 		font-size: 8px;
 	}
@@ -22,5 +22,23 @@
 	}
   .promo{
   	margin-bottom: auto;
+  }
+  .content-align{
+  	width: 85vw;
+  }
+  .feature-item{
+  	width: 100%;
+  }
+  .grid-feedback-tip{
+  	-webkit-flex-direction: column;
+  	-moz-flex-direction: column;
+  	-ms-flex-direction: column;
+  	-o-flex-direction: column;
+  	flex-direction: column;
+  	-ms-align-items: flex-start;
+  	align-items: flex-start;
+  }
+  .feedback-form{
+  	width: 40vw;
   }
 }

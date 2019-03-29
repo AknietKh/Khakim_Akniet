@@ -36,26 +36,30 @@
   <main>
 
     <section class="features">
-      <ul class="content-align">
-        <li class="feature-item feature-item_icon1">
-          <h2 class="feature-item__feature-header">Выбор</h2>
-          <p>Ваш питомец оценит широту нашего<br> ассортимента аксессуаров.</p>
-        </li>
-        <li class="feature-item feature-item_icon2">
-          <h2 class="feature-item__feature-header">Качество</h2>
-          <p>Наши товары не сломаются на<br> второй день. Только на третий.</p>
-        </li>
-        <li class="feature-item feature-item_icon3">
-          <h2 class="feature-item__feature-header">Безопасность</h2>
-          <p>Все изготовлено из натуральных<br> материалов, безопасных для котов.</p>
-        </li>
-      </ul>
+      <div class="content-align">
+      	<div class="grid-features">
+          <div class="feature-item feature-item_icon1">
+            <h2 class="feature-item__feature-header">Выбор</h2>
+            <p>Ваш питомец оценит широту нашего<br> ассортимента аксессуаров.</p>
+          </div>
+          <div class="feature-item feature-item_icon2">
+            <h2 class="feature-item__feature-header">Качество</h2>
+            <p>Наши товары не сломаются на<br> второй день. Только на третий.</p>
+          </div>
+          <div class="feature-item feature-item_icon3">
+            <h2 class="feature-item__feature-header">Безопасность</h2>
+            <p>Все изготовлено из натуральных<br> материалов, безопасных для котов.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="articles">
       <div class="content-align">
-        <h2 class="section-header">Немного теории</h2>
-        <a class="batton batton_theme-brown batton_theme-articles" href="#">Справочник</a>
+      	<div class="grid-section-header">
+          <h2 class="section-header">Немного теории</h2>
+          <a class="batton batton_theme-brown" href="#">Справочник</a>
+      </div>
         <article class="article">
           <header class="article__header">
             <h2>Окрас кошек и котов</h2>
@@ -77,38 +81,42 @@
 
     <section class="reviews">
       <div class="content-align">
-        <h2 class="section-header">Довольные коты</h2>
-        <a class="batton batton_theme-brown" href="#">Все отзывы</a>
 
-        <article class="review-item">
-          <p class="review-item__info">Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)
-          </p>
-          <footer class="review-item__contact">
-          Барсик, г. Москва
-          </footer>
-        </article>
+      	<div class="grid-section-header">
+          <h2 class="section-header">Довольные коты</h2>
+          <a class="batton batton_theme-brown" href="#">Все отзывы</a>
+        </div>
 
-        <article class="review-item">
-          <p class="review-item__info">Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!
-          </p>
-          <footer class="review-item__contact">
-          Мурка, г. Санкт-Петербург
-          </footer>
-        </article>
+        <div class="grid-reviews">
+          <article class="review-item">
+            <p class="review-item__info">Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)
+            </p>
+            <footer class="review-item__contact">Барсик, г. Москва
+            </footer>
+          </article>
 
+          <article class="review-item">
+            <p class="review-item__info">Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!
+            </p>
+            <footer class="review-item__contact">Мурка, г. Санкт-Петербург
+            </footer>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="popular-and-price">
       <div class="content-align">
 
-        <h2 class="section-header">Популярные товары</h2>
-        <a class="batton batton_theme-brown" href="#">Каталог</a>
+        <div class="grid-section-header">
+          <h2 class="section-header">Популярные товары</h2>
+          <a class="batton batton_theme-brown" href="#">Каталог</a>
+        </div>
 
         <section class="popular-items">
           <article class="popular-item">
             <header>
-              <img src="img/glasses-1.jpg" alt="очки «Классика жанра»" class="popular-item__header-photo">
+              <img src="img/glasses-1.jpg" alt="очки «Классика жанра»" class="popular-item__header-img">
               <h3 class="popular-item__name">Очки «Классика 	жанра»</h3>
               <b class="popular-item__price">300 р.</b>
             </header>
@@ -120,7 +128,7 @@
 
           <article class="popular-item">
             <header>
-              <img src="img/glasses-2.jpg" alt="Очки «Жалюзи»" class="popular-item__header-photo">
+              <img src="img/glasses-2.jpg" alt="Очки «Жалюзи»" class="popular-item__header-img">
               <h3 class="popular-item__name">Очки «Жалюзи»</h3>
               <b class="popular-item__price">400 р.</b>
             </header>
@@ -132,7 +140,7 @@
 
           <article class="popular-item">
             <header>
-              <img src="img/glasses-3.jpg" alt="очки «Базилис»" class="popular-item__item-photo">
+              <img src="img/glasses-3.jpg" alt="очки «Базилис»" class="popular-item__header-img">
               <h3 class="popular-item__name">Очки «Базилис»</h3>
               <b class="popular-item__price">500 р.</b>
             </header>
@@ -183,8 +191,10 @@
     <section class="feedback">
       <div class="content-align">
 
-        <h2 class="section-header">Остались вопросы?</h2>
-        <span class="feedback__tip">Свяжитесь с нами и мы развеем оставшиеся у вас сомнения!</span>
+        <div class="grid-section-header grid-feedback-tip">
+          <h2 class="section-header">Остались вопросы?</h2>
+          <span class="feedback__tip">Свяжитесь с нами и мы развеем оставшиеся у вас сомнения!</span>
+        </div>
         
         <form action="mailto:akniet.khakimov@mail.ru" enctype="text/plain" method="post" class="feedback-form">
           
