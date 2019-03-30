@@ -181,6 +181,7 @@ html{
 	flex-direction: row;
 }
 .feature-item{
+	padding-top: 9rem;
 	margin-right: -0.5rem;
 	width: 34rem;
 	font-family: Arial, sans-serif;
@@ -205,7 +206,6 @@ html{
 	font-weight: bold;
 	line-height: 3rem;
 	color: #a38b70;
-	margin-top: 9rem;
 	margin-bottom: 1.8rem;
 }
 .articles{
@@ -325,14 +325,28 @@ html{
 	padding-bottom: 9rem;
 }
 .popular-items{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 }
 .popular-item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
 	max-width: 30.5rem;
-	max-height: 33rem;
 	font-family: Arial, sans-serif;
 	font-size: 1.6rem;
 	line-height: 2.4rem;
@@ -342,30 +356,44 @@ html{
 .popular-item__header-img{
 	max-width: 30.5rem;
 }
-.popular-item__name{
-	display: inline-block;
-	margin-top: 1rem;
-	margin-left: 2.2rem;
+.mediagrid-popular-item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	flex-basis: 87%;
+	padding-top: 2rem;
+	padding-bottom: 1.8rem;
+	
 }
-.popular-item__price{
-	float: right;
-	margin-top: 1rem;
-	margin-right: 2.2rem;
+.popular-item__header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
 }
 .popular-item__footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 	margin-top: 1.8rem;
-	margin-bottom: 1.8rem;
 }
 .batton_theme-fully-brown{
 	max-width: 12.2rem;
   background-color: #a38b70;
   border: 2px solid #a38b70;
   border-radius: 2px;
-}
-.batton_theme-fully-brown:first-child{
-	margin-left: 2.2rem;
-	margin-right: 1rem;
 }
 .batton_theme-fully-brown:hover{
   background-color: #8d745a;

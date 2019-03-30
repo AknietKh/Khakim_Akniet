@@ -42,3 +42,127 @@
   	width: 40vw;
   }
 }
+@media (max-width: 760px) {
+	.grid-features{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.feature-item{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		border-right: none;
+		border-bottom: 2px solid #d9d9d9;
+		padding-top: 9rem;
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+		font-size: 2.5rem;
+	}
+	.feature-item__feature-header{
+		font-size: 4rem;
+	}
+	.popular-items{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.popular-item{
+		max-width: 100%;
+		height: 21rem;
+		margin-bottom: 1.5rem;
+		justify-content: space-between;
+		-ms-align-items: stretch;
+		align-items: stretch;
+	}
+	.mediagrid-popular-item{
+		flex-basis: auto;
+		flex-grow: 2;
+		justify-content: space-between;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.popular-item__footer,
+	.popular-item__header{
+		
+		width: 100%;
+		justify-content: space-around;
+	}
+	.feedback{
+		background: #fff none;
+	}
+	.feedback-form{
+		width: 100%;
+	}
+}
+@media (max-width: 582px) {
+	html{
+		font-size: 7px;
+	}
+	.promo{
+		font-size: 4rem;
+	}
+	.header-top{
+		height: 4rem;
+	}
+	.popular-item__header,
+	.popular-item__footer{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-around;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.mediagrid-popular-item{
+		padding-bottom: 0;
+	}
+	.popular-item__footer{
+		height: 70%;
+	}
+	.footer-copyright{
+		display: none;
+	}
+}
+@media (max-width: 415px) {
+	html{
+		font-size: 5px;
+	}
+	.promo{
+		font-size: 3rem;
+	}
+	.feature-item{
+		padding-top: 14rem;
+	}
+	.popular-items{
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.popular-item{
+		max-width: 30.5rem;
+		height: auto;
+		margin-bottom: 3rem;
+	}
+	.popular-item__header,
+	.popular-item__footer{
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+	}
+}
